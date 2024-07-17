@@ -37,6 +37,26 @@ The dashboard is intended to help me answer the following questions:
 
 Open `quantisation-dashboard.html` in a web browser to view the interactive visualisations.
 
+### Perplexity vs Compression Chart
+
+This chart illustrates the relationship between model compression and perplexity increase. It aims to help understand how different quantisation levels affect model quality and size reduction.
+
+### Quantisation Spectrum Heatmap
+
+This table provides a quick overview of various quantisation types, their relative sizes, qualities, and performance characteristics on different hardware (CUDA and Metal). It's for quickly comparing different quantisation options at a glance.
+
+### Quantisation Sweet Spots
+
+This table helps to identify the optimal quantisation level for different model sizes and VRAM constraints. It's useful for those working with specific hardware limitations.
+
+### Quantisation Efficiency
+
+These charts dive deeper into the efficiency of quantisation across different model sizes. They show how perplexity increase per GB saved changes with model size and quantisation.
+
+### Decision Tree
+
+This visual guide helps users navigate the decision-making process for selecting the most appropriate quantisation level based on their priorities (quality vs. size) and hardware constraints.
+
 ### Building
 
 To build the dashboard, run the following command:
