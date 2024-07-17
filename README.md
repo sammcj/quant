@@ -6,6 +6,8 @@ The data is mainly focused on GGUF quantisation, but the visualisations can be u
 
 [![](screenshot.png)](quantisation-dashboard.html)
 
+[Blog post](https://smcleod.net/2024/07/understanding-ai/llm-quantisation-through-interactive-visualisations/)
+
 ## Disclaimer
 
 I am not a ML engineer, data scientist or researcher. I am simply an engineer with an interest in AI.
