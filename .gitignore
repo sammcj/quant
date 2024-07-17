@@ -1,0 +1,8 @@
+**/node_modules
+**/*.vscode
+*.tmp
+**/dist/*
+**/build/*
+**/*.log
+build/
+.aider*

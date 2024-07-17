@@ -1,0 +1,48 @@
+{
+  "name": "llm-benchmark-visualisation",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-organizational-chart": "^2.2.1",
+    "recharts": "^2.12.7",
+    "tailwindcss": "^3.4.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "react-scripts": "^5.0.1",
+    "react-dom": "^18.3.1",
+    "express": "^4.19.2",
+    "jsdom": "^24.1.0",
+    "postcss": "^8.4.39"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:react\" \"npm run start:server\"",
+    "start:react": "BROWSER=none react-scripts start",
+    "start:server": "node server.js",
+    "build": "react-scripts build",
+    "export": "node export.js",
+    "hugo": "npm run build && npm run export && $(cp quantisation-dashboard.html $HOME/git/sammcj/smcleod/static/)",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001"
+}

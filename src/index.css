@@ -1,0 +1,8 @@
+#quantisation-dashboard-app {
+  /* Reset styles */
+  all: initial;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
