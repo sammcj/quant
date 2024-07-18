@@ -123,27 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.body.innerHTML += combinedScript;
 
-// // Add custom CSS for width
-// const customCSS = `
-// <style>
-//   .quantisation-dashboard-wrapper {
-//     width: 100vw !important;
-//     --main-width: 1800px !important;
-//     max-width: 1800px !important; /* Adjust this value as needed */
-//     margin-left: 50%;
-//     transform: translateX(-50%);
-//     overflow-x: auto;
-//   }
-//   @media (max-width: 1200px) {
-//     .quantisation-dashboard-wrapper {
-//       padding: 0 20px;
-//     }
-//   }
-// </style>
-// `;
-// document.head.innerHTML += customCSS;
-
-
 // Write the modified HTML to a new file
 fs.writeFileSync(path.join(buildDir, outputFileName), dom.serialize());
 console.log(`Generated ${outputFileName}`);
